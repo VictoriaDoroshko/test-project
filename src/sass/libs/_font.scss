@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Schnyder";
+    src : url("../fonts/Schnyder_X_Condensed/Schnyder X Cond L Bold.otf");
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT_America/GTAmerica-Bold.eot');
+    src: url('../fonts/GT_America/GTAmerica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GT_America/GTAmerica-Bold.woff2') format('woff2'),
+        url('../fonts/GT_America/GTAmerica-Bold.woff') format('woff'),
+        url('../fonts/GT_America/GTAmerica-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url('../fonts/TT_Travel/TTTravels-Light.eot');
+    src: url('../fonts/TT_Travel/TTTravels-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TT_Travel/TTTravels-Light.woff2') format('woff2'),
+        url('../fonts/TT_Travel/TTTravels-Light.woff') format('woff'),
+        url('../fonts/TT_Travel/TTTravels-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

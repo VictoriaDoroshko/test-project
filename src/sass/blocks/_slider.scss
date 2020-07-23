@@ -1,0 +1,80 @@
+.swiper-slide {
+    width: 870px;
+}
+.swiper-slide__brown {
+    font-family: Schnyder Cond XL Demi;
+    font-size: 126px;
+    line-height: 108px;
+    text-transform: uppercase;
+    color: #580300;
+    width: 609px;
+    text-align: center;
+}
+
+.swiper-slide__transparent {
+    font-size: 126px;
+    line-height: 108px;
+    text-transform: uppercase;
+    color: transparent;
+    transform: rotate(-1.5deg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #580300;
+    width: 609px;
+    text-align: center;
+}
+
+.swiper-container {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide_photo1, .slide_photo2, .slide_photo3 {
+    height: 702px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.slide__left_photo {
+    width: 238px;
+    height: 331px;
+    transform: rotate(1.1deg);
+    position: absolute;
+    top: 55px;
+    left: 289px;
+    object-fit: cover;
+}
+
+.slide__center_photo {
+    width: 476px;
+    height: 702px;
+    transform: rotate(1.5deg);
+    object-fit: cover;
+}
+
+.slide__right_photo {
+    width: 345px;
+    height: 238px;
+    transform: rotate(2.03deg);
+    position: absolute;
+    bottom: 0;
+    right: 261px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide__center {
+    position: absolute;
+    width: inherit;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}

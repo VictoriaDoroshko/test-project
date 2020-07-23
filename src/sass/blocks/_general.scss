@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.wrapper {
+    cursor: url(../../img/ellipse3.png), auto;
+}
+
+.header {
+    margin-top: 40px;
+}
+.container__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-family: 'GT America';
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav a {
+    font-family: 'TT Travels';
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #000000;
+    display: block;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+// Cursor
+.hide {
+    display: none;
+}
+
+.floatingmes {
+    position: absolute; 
+    z-index: 999; 
+    top: 0; 
+    left: 0; 
+    width: 100px; 
+    font-family: 'TT Travels';
+    font-size: 18px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
