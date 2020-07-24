@@ -32,3 +32,25 @@ $(document).ready(function(){
   
 }); 
 
+
+//Parallax
+
+$('.mouse-parallax').on('mousemove', (e) => {
+  const x = e.pageX / $(window).width();
+  const y = e.pageY / $(window).height();
+
+  $('.mouse-parallax__content').css(
+    'transform',
+    'translate(' +  x * 50 + 'px,  ' + y * 50 + 'px)'
+  );
+
+  $('.mouse-parallax__content2').css(
+    'transform',
+    'translate(' + x * 60 + 'px,  ' + y * 60 + 'px)'
+  );
+
+  $('.mouse-parallax__content3').css(
+    'transform',
+    'translate(' + x * 80 + 'px,  ' + y * 80 + 'px)'
+  );
+});
