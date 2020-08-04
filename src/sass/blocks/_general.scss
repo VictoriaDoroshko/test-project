@@ -1,101 +1,101 @@
 body {
     box-sizing: border-box;
-    height: 100vh;
-}
+    .wrapper {
+        cursor: url(../../img/ellipse3.png), auto;
+        height: 100vh;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        path {
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 2000;
+            animation: dash 5s linear;
+            animation-fill-mode: forwards; 
+        }  
+        @keyframes dash {
+            from {
+              stroke-dashoffset: 2000;
+            }
+            to {
+              stroke-dashoffset: 0;
+            }
+        }
+        .header {
+            margin-top: 40px;
+            .container__flex {
+                display: flex;
+                justify-content: space-between;
+            }
+            .logo a {
+                font-family: 'GT America';
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: -1px;
+                color: #000000;
+            }
+            .nav a {
+                font-family: 'TT Travels';
+                font-size: 11px;
+                line-height: 13px;
+                text-align: right;
+                letter-spacing: 0.02em;
+                text-transform: capitalize;
+                color: #000000;
+                display: block;
+                text-decoration: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
 
-.wrapper {
-    cursor: url(../../img/ellipse3.png), auto;
+        }
+        .hide {
+            display: none;
+        }
+        
+        .floatingmes {
+            position: absolute; 
+            z-index: 999; 
+            top: 0; 
+            left: 0; 
+            width: 100px; 
+            font-family: 'TT Travels';
+            font-size: 18px;
+            line-height: 10px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .social {
+            display: flex;
+            &_fb {
+                position: relative;
+                margin-left: 50px;
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 56px;
+                    height: 1px;
+                    left: -64px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #393939;
+                    opacity: 0.24;
+                }
+            }
+            div {
+                font-family: TT Travels;
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                margin-right: 8px;
+                &:last-child {
+                    margin-left: 64px;
+                }
+            }
+        }
+    }  
 }
-
-.header {
-    margin-top: 40px;
-}
-.container__flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo a {
-    font-family: 'GT America';
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: -1px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav a {
-    font-family: 'TT Travels';
-    font-size: 11px;
-    line-height: 13px;
-    text-align: right;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #000000;
-    display: block;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-// Cursor
-.hide {
-    display: none;
-}
-
-.floatingmes {
-    position: absolute; 
-    z-index: 999; 
-    top: 0; 
-    left: 0; 
-    width: 100px; 
-    font-family: 'TT Travels';
-    font-size: 18px;
-    line-height: 10px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-}
-
-svg {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-path {
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation: dash 5s linear;
-    animation-fill-mode: forwards;
-   
-  }
-  
-//   #path2 {
-//     animation-delay: 1s;
-//   }
-  
-//   #path3 {
-//     animation-delay: 3s;
-//   }
-  
-//   #path4 {
-//     animation-delay: 4s;
-//   }
-  
-//   #path5 {
-//     animation-delay: 5.8s;
-//   }
-  
-//   #path6 {
-//     animation-delay: 2s;
-//   }
-  
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 2000;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }

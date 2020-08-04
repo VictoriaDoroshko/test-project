@@ -1,21 +1,19 @@
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 30,
+const sliderText = document.querySelector('.slider-text');
+const sliderMain = document.querySelector('.slider-main');
+
+let mySliderMain = new Swiper (sliderMain, {
+  slidePerView: 1,
   loop: true,
   effect: 'fade',
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  fadeEffect: {
-    crossFade: true
+});
+let mySliderText = new Swiper(sliderText, {
+  slidePerView: 1,
+  loop: true,
+  thumbs: {
+    swiper: mySliderMain,
   },
 });
-
+  
 // Cursor
 
 $(document).ready(function(){ 
